@@ -1,0 +1,43 @@
+.login-container {
+       display: flex;
+       height: 100vh;
+}
+.login-container .bg-img {
+       width: 60%;
+       background-size: cover;
+       height: 100%;
+}
+.login-container .bg-img img {
+       width: 60%;
+       height: 80%;
+       margin: 5%;
+}
+.login-container .login-form-wrapper {
+       width: 40%;
+       height: 100%;
+       padding-top: 8rem;
+}
+.login-container .login-form-wrapper .login-header img {
+       width: 20%;
+       padding-bottom: 2rem;
+}
+#reset-p:hover {
+       color: #ff637c;
+       cursor: pointer;
+}
+#login-form {
+       margin-right: 6rem;
+}
+#redirect-register {
+       cursor: pointer;
+       font-weight: bold;
+}
+#redirect-register:hover {
+       color: #ff637c;
+}
+.login-container .login-form-wrapper .reset-p {
+       margin-bottom: 1rem;
+}
+#form-action .line-direct {
+       margin-top: 1rem;
+}

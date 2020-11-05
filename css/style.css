@@ -1,0 +1,32 @@
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: 'PT Sans', sans-serif;
+      }
+.btn {
+       cursor: pointer;
+       background-color: #ff637c;
+       width: 4rem;
+       height: 2.25rem;
+       border-radius: 5px;
+       border: 1px solid #ff637c;
+       font-weight: bold;
+       box-sizing: border-box;
+       padding: 12px 6px;
+       size: 2rem;
+}
+.btn:hover {
+       background-color: #f2f2f2;
+}
+.input-wrapper input {
+       font-size: 1rem;
+       border-radius: 5px;
+       border: 1px solid #ff637c;
+       width: 100%;
+       padding: 12px 10px;
+}
+.input-wrapper {
+       margin-bottom: 1rem;
+}
+
