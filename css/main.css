@@ -1,0 +1,65 @@
+.main-container {
+       height: 100vh;
+       background-image: url("https://images.pexels.com/photos/552791/pexels-photo-552791.jpeg?cs=srgb&dl=pexels-krivec-ales-552791.jpg&fm=jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+.main-container .header-wrapper {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 6rem;   
+}
+.main-container .header-wrapper .header {
+       font-size: 2.5rem;
+       position: relative;
+}
+.main-container .header-wrapper .userdrop {
+       position: absolute;
+       left: 75rem;
+}
+.userdrop .avatar i {
+       margin-bottom: 1rem;
+}
+.avatar {
+       margin-top: 3rem;
+       position: relative;
+       font-size: 2rem;
+}
+.user-action {
+       position: absolute;
+       display: none;
+       width: max-content;
+       font-size: 1.2rem;
+}
+.userdrop:hover .user-action {
+       display: block;
+}
+.dropdown .icon i {
+       font-size: 2rem;
+       margin-bottom: 1rem;
+}
+.main-container .main {
+       display: flex;
+}
+.main-container .aside-left {
+       width: 30%;
+       margin-left: 2rem;
+}
+.main-container .list-post {
+       width: 70%;
+       font-size: 1.5rem;
+}
+.dropdown-content{
+       display: none;
+       font-size: 1.5rem;
+}
+.dropdown:hover .dropdown-content {
+       display: block;
+       width: max-content;
+}
+p:hover {
+       color: #ffffff;
+       padding: 0.5rem 0 0.5rem 0;
+}

@@ -1,4 +1,33 @@
 const components = {}
+components.welcomeSceen = `
+<div class="main-container">
+       <div class="header-wrapper">
+            <div class="header">Unique Location</div>
+            <div class="userdrop">
+                     <div class="avatar cursor-all"><i class="fas fa-user-circle"></i></div>
+                     <div class="user-action cursor-all">
+                            <p>profile</p>
+                            <p>sign out</p>
+                     </div> 
+            </div>
+              </div>
+            <div class="main">
+                   <div class="aside-left">
+                     <div class="dropdown">
+                            <span class="icon cursor-all"><i class="fas fa-window-minimize"></i></span>
+                            <div class="dropdown-content cursor-all mg-b">
+                            <p>coffe</p>
+                            <p>travel</p>
+                            <p>entertainment</p>
+                            </div>
+                     </div>
+                   </div>
+                   <div class="list-post">
+                         My Post
+                   </div>
+            </div>
+       </div>
+`
 components.registerScreen = `
 <div class="register-container">
               <div class="bg-img">

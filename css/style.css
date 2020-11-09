@@ -2,8 +2,11 @@
        margin: 0;
        padding: 0;
        box-sizing: border-box;
-       font-family: 'PT Sans', sans-serif;
+       font-family: 'Space Grotesk', sans-serif;
       }
+body {
+       color: #2c2c44;
+}
 .btn {
        cursor: pointer;
        background-color: #ff637c;
@@ -28,5 +31,8 @@
 }
 .input-wrapper {
        margin-bottom: 1rem;
+}
+.cursor-all{
+       cursor: pointer;
 }
 
