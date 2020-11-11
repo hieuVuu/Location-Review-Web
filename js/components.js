@@ -1,32 +1,37 @@
 const components = {}
 components.welcomeSceen = `
-<div class="main-container">
-       <div class="header-wrapper">
-            <div class="header">Unique Location</div>
-            <div class="userdrop">
-                     <div class="avatar cursor-all"><i class="fas fa-user-circle"></i></div>
-                     <div class="user-action cursor-all">
-                            <p>profile</p>
-                            <p id="sign-out">sign out</p>
-                     </div> 
-            </div>
-              </div>
-            <div class="main">
-                   <div class="aside-left">
-                     <div class="dropdown">
-                            <span class="icon cursor-all"><i class="fas fa-window-minimize"></i></span>
-                            <div class="dropdown-content cursor-all mg-b">
-                            <p>coffe</p>
-                            <p>travel</p>
-                            <p>entertainment</p>
-                            </div>
+<div class="container">
+<div class="header-container">
+       <div class="title">Unique Location</div>
+       <div class="icon-user cursor-all"">
+              <div class="dropdown">
+                     <i class="fas fa-user-circle"></i>
+                     <div class="dropdown-content">
+                            <p>Profile</p>
+                            <p id="sign-out">Sign Out</p>
                      </div>
-                   </div>
-                   <div class="list-post">
-                         My Post
-                   </div>
-            </div>
+              </div>
        </div>
+</div>
+<div class="main-page">
+       <div class="aside-left">
+              <div class="left-title">Show the world you care</div>
+              <div class="filter">
+                     <button class="btn-main cursor-all">Coffe</button>
+                     <button class="btn-main cursor-all"">Entertainment</button>
+                     <button class="btn-main cursor-all"">Travel</button>
+                     <button class="btn-main cursor-all"">Student</button>
+                     <button class="btn-main cursor-all"">Animals</button>
+              </div>
+       </div>
+       <div class="location">
+              <div class="list-title">Some where you need</div>
+              <div class="list-location">
+                     
+              </div>
+       </div>
+</div>
+</div>
 `
 components.registerScreen = `
 <div class="register-container">
