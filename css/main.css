@@ -44,11 +44,11 @@
        display: flex;
 }
 .main-container .aside-left {
-       width: 30%;
-       margin-left: 2rem;
+       width: 20%;
+       margin-left: 3rem;
 }
 .main-container .list-post {
-       width: 70%;
+       width: 80%;
        font-size: 1.5rem;
 }
 .dropdown-content{
@@ -63,3 +63,20 @@ p:hover {
        color: #ffffff;
        padding: 0.5rem 0 0.5rem 0;
 }
+.main-right-home {
+       width: 52rem;
+       border: 1px solid rgb(215 215 215);
+       background-color: honeydew;
+       margin-top: 2rem;
+       position: relative;  
+       min-height: calc(100vh - 10rem);
+       border-radius: 0.5rem;
+       box-sizing: border-box;
+}
+.main-right-home .list-location {
+       padding: 1rem 2rem 1rem;
+}
+.main-right-home .title-wrapper{
+       
+}
+

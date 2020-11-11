@@ -7,7 +7,7 @@ components.welcomeSceen = `
                      <div class="avatar cursor-all"><i class="fas fa-user-circle"></i></div>
                      <div class="user-action cursor-all">
                             <p>profile</p>
-                            <p>sign out</p>
+                            <p id="sign-out">sign out</p>
                      </div> 
             </div>
               </div>
@@ -41,24 +41,24 @@ components.registerScreen = `
                             <div class="name-wrapper">
                                    <div class="input-wrapper">
                                           <input type="text" name="firstname" placeholder=" First name">
-                                          <div class="err"></div>
+                                          <div id="firstname-err" class="err"></div>
                                    </div>
                                    <div class="input-wrapper">
                                           <input type="text" name="lastname" placeholder=" Last name">
-                                          <div class="err"></div>
+                                          <div id="lastname-err" class="err"></div>
                                    </div>
                             </div>
                             <div class="input-wrapper">
                                    <input type="email" name="email" placeholder=" Email">
-                                   <div class="err"></div>
+                                   <div id="email-err" class="err"></div>
                             </div>
                             <div class="input-wrapper">
                                    <input type="password" name="password" placeholder=" Password">
-                                   <div class="err"></div>
+                                   <div id="password-err" class="err"></div>
                             </div>
                             <div class="input-wrapper">
                                    <input type="password" name="confirmpassword" placeholder=" Confirm Password">
-                                   <div class="err"></div>
+                                   <div id="confirmpassword-err" class="err"></div>
                             </div>
                             <div class="register-form-action">
                                    <div class="line-direct">
@@ -82,11 +82,11 @@ components.loginScreen = `
                      <form action="" id="login-form">
                             <div class="input-wrapper">
                                    <input type="email" name="email" placeholder=" Email">
-                                   <div class="err"></div>
+                                   <div id="email-err" class="err"></div>
                             </div>
                             <div class="input-wrapper">
                                    <input type="password" name="password" placeholder=" Password">
-                                   <div class="err"></div>
+                                   <div id="password-err" class="err"></div>
                             </div>
                             <div class="reset-p">
                                    <span id="reset-p">Forgot Password?</span>

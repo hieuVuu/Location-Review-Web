@@ -35,4 +35,8 @@ body {
 .cursor-all{
        cursor: pointer;
 }
-
+.err {
+       color: red;
+       font-size: 0.9rem;
+       padding: 2px 2px;
+}
