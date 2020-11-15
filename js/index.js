@@ -11,6 +11,15 @@ const init = () => {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-    view.setActiveScreen('registerScreen')
+ 
+  firebase.auth().onAuthStateChanged(function(user) {
+    var user = firebase.auth().currentUser;
+    if (user) {
+      console.log(1)
+      view.setActiveScreen('welcomeScreen')
+    } else {
+      // No user is signed in.
+    }
+  });
 }
 window.onload = init

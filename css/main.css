@@ -40,11 +40,14 @@
        font-size: 1.5rem;
        font-weight: 500;
        margin-bottom: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
 }
 .list-location {
        background-color: cornsilk;
        height: calc(100vh - 10rem);
-       width: 85%;
+       width: 90%;
 }
 .dropdown {
        position: relative;
@@ -56,10 +59,31 @@
        font-size: 1rem;
        width: max-content;
 }
+.dropdown-content p {
+       margin-top: 0.5rem;
+}
 .dropdown:hover .dropdown-content {
        display: block;
 }
 .dropdown-content p:hover {
        color: cornsilk;
+}
+.container .list-location {
+       display: flex;
+       padding: 2rem;
+       border-radius: 0.5rem;
+}
+.container .list-location .item {
+       background: burlywood;
+       width: 23%;
+       height: 30%;
+       border-radius: 0.4rem;
+}
+.container .list-location .item .img-item  {
+       height: 80%;
+       background: chocolate; 
+}
+.container .list-location .item .info-item {
+       height: 20%;
 }
  
