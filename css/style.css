@@ -1,12 +1,32 @@
-* {
+/* * {
        margin: 0;
        padding: 0;
        box-sizing: border-box;
+<<<<<<< HEAD
+       font-family: 'PT Sans', sans-serif;
+} */
+
+html,
+body {
+       margin: 0;
+       padding: 0;
+       font-family: 'PT Sans', sans-serif;
+       color: #000;
+       float: left;
+       width: 100%;
+       height: 100%;
+       background: #ffff no-repeat 50% 50%;
+       background-size: cover;
+
+}
+
+=======
        font-family: 'Space Grotesk', sans-serif;
       }
 body {
        color: #110205;
 }
+>>>>>>> origin/quan
 .btn {
        cursor: pointer;
        background-color: #ff637c;
@@ -19,9 +39,11 @@ body {
        padding: 12px 6px;
        size: 2rem;
 }
+
 .btn:hover {
        background-color: #f2f2f2;
 }
+
 .input-wrapper input {
        font-size: 1rem;
        border-radius: 5px;
@@ -29,9 +51,115 @@ body {
        width: 100%;
        padding: 12px 10px;
 }
+
 .input-wrapper {
        margin-bottom: 1rem;
 }
+<<<<<<< HEAD
+
+/* navigation */
+.narvigation-bar {
+       overflow: hidden;
+       background-color: #242526;
+       position: fixed;
+       top: 0;
+       width: 100%;
+       margin: auto;
+}
+
+.narvigation-bar li a {
+       display: inline;
+}
+
+.narvigation-bar ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+}
+
+.narvigation-bar li {
+       float: left;
+}
+
+.narvigation-bar a {
+       float: left;
+       display: block;
+       color: #f2f2f2;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size: 17px;
+}
+
+.narvigation-bar a:hover {
+       color: white;
+       background-color: #db7093;
+       font-weight: bold;
+}
+
+.narvigation-bar .feature {
+       position: relative;
+       width: 80%;
+       padding-left: 6px;
+       padding-right: 6px;
+}
+
+.narvigation-bar .account-controls-setting {
+       float: left;
+       width: 30%;
+}
+
+.narvigation-bar .account-controls-setting .controls {
+       position: absolute;
+       right: 0px;
+       top: 0px;
+       width: 21%;
+}
+
+
+
+.narvigation-bar .account-controls-setting .controls .account img {
+       width: 30px;
+       height: 30px;
+       border-radius: 100%;
+       margin-top: 8px;
+
+}
+
+.narvigation-bar .account-controls-setting .controls .account button {
+       background-color: #242526;
+       border: none;
+       color: #f2f2f2;
+       float: left;
+       margin-top: 1px;
+}
+
+.narvigation-bar .account-controls-setting .controls .account button .user-name {
+       margin-top: 14px;
+       padding-left: 10px;
+       float: right;
+
+}
+
+
+.narvigation-bar .account-controls-setting .setting button {
+       background-color: #242526;
+       border-top: none;
+       border-bottom: none;
+       border-right: none;
+       color: white;
+       padding: 6px 16px;
+       text-align: center;
+       text-decoration: none;
+       float: left;
+       font-size: 17px;
+       margin-top: 8px;
+       
+
+      
+}
+=======
 .cursor-all{
        cursor: pointer;
 }
@@ -52,3 +180,4 @@ body {
 .btn-main:hover {
        background-color: rgb(179, 206, 223);
 }
+>>>>>>> origin/quan

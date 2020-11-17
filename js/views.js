@@ -1,5 +1,36 @@
 const view = {}
 view.setActiveScreen = (screenName) => {
+<<<<<<< HEAD
+       switch (screenName) {
+              case 'loginScreen':
+                     document.getElementById('app').innerHTML = components.loginScreen
+                     document.getElementById('redirect-register').addEventListener('click', () => {
+                            view.setActiveScreen('registerScreen')
+                     })
+                     break;
+              case 'registerScreen':
+                     document.getElementById('app').innerHTML = components.registerPage
+                     document.getElementById('redirect-login')
+                            .addEventListener('click', () => {
+                                   view.setActiveScreen('loginScreen')
+                            })
+                     const registerScreen = document.getElementById('register-form')
+                     registerScreen.addEventListener('submit', (event) => {
+                            event.preventDefault()
+                            const dataRegister = {
+                                   firstName: registerScreen.firstName.value,
+                                   lastName: registerScreen.lastName.value,
+                                   email: registerScreen.email.value,
+                                   password: registerScreen.password.value,
+                                   confirmPassword: registerScreen.confirmPassword.value,
+                            }
+                     })
+                     controller.register(dataregister)
+                     break;
+
+              case 'userPage':
+                    
+=======
        switch(screenName) {
               case 'loginScreen' :
               document.getElementById('app').innerHTML = components.loginScreen 
@@ -56,3 +87,4 @@ view.setActiveScreen = (screenName) => {
 view.setErrMessage = (elemId, message) => {
        document.querySelector(elemId).innerText = message
 }
+>>>>>>> origin/quan

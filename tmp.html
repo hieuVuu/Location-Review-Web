@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Document</title>
+       <title>User</title>
        <link rel="stylesheet" href="./css/style.css">
        <link rel="stylesheet" href="./css/register.css">
        <link rel="stylesheet" href="./css/login.css">
+<<<<<<< HEAD
+       <link rel="stylesheet" href="./css/userprofile.css">
+</head>
+
+<body style="background-color: #18191a;">
+       <div id="app"></div>
+       <div class="web">
+              <div class="narvigation-bar">
+                     <div class="feature">
+                            <ul>
+                                   <li><a href="#">Trang chủ</a></li>
+                                   <li><a href="#">a</a></li>
+                                   <li><a href="#">a</a></li>
+                                   <li><a href="#">a</a></li>
+                            </ul>
+                     </div>
+
+                     <div class="account-controls-setting">
+                            <div class="controls">
+                                   <div class="account">
+                                          <button href="">
+                                                 <img src="images/9-cau-noi-hay-8-1522225466.jpg" width="16" height="16"
+                                                        alt="">
+                                                 <div class="user-name">
+                                                        <span id="user-name">phan quan</span></div>
+                                          </button>
+                                   </div>
+                                   <div class="setting">
+                                          <span><button>setting</button></span>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+              <div class="profile">
+                     <div class="profile-background-image">
+                            <div class="image">
+                                   <a href="#">
+                                          <img id="image-background" src="images/9-cau-noi-hay-8-1522225466.jpg" width="900" height="325"
+                                                 alt="">
+                                   </a>
+                                   <input type="file" id="photo1" name="file" />
+                                          <button onclick="uploadImage1()">Upload Image</button>
+
+                            </div>
+                     </div>
+
+                     <div class="profile-image-representative">
+
+                            <div class="represtative">
+                                   <div class="image">
+                                          <img id="image-representative"
+                                                 src="images/EUGj-OfXgAY7zKx-e1585300534461-700x415.jpg">
+
+                                   </div>
+                                   <div class="replace">
+                                          <i class="fas fa-camera"></i>
+                                          <input type="file" id="photo2" name="file" />
+                                          <button onclick="uploadImage2()">Upload Image</button>
+                                   </div>
+
+                            </div>
+                     </div>
+                     <div class="user-name">
+                            <!-- <span id="user-name" style="color: #a2a4a8;">phan quan</span> -->
+                     </div>
+                     <div class="user-information" style="color: #a2a4a8;">
+                            <div class="left-part">
+                                   <ol class="about">
+                                          <li>detail</li>
+                                          <li>hobbies</li>
+                                   </ol>
+                            </div>
+                            <div class="right-part">
+                                   <div class="detail-part">
+                                          <ul class=detail>
+                                                 <li class="name">phan quan</li>
+                                                 <li class="telephone">123132</li>
+                                                 <li class="address">papapa</li>
+                                          </ul>
+                                   </div>
+                                   <div class="hobbies-part">
+                                          <ul class="hobbies">
+                                                 <li class="location">cafe</li>
+                                                 <li class="food">banhmi</li>
+                                                 <li class="drink">coffee</li>
+                                          </ul>
+                                   </div>
+=======
        <link rel="stylesheet" href="./css/main.css">
        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -40,9 +129,29 @@
                             <div class="list-title">Some where you need</div>
                             <div class="list-location">
                                    
+>>>>>>> origin/quan
                             </div>
                      </div>
               </div>
        </div>
+       <!-- <script>
+              async function filter() {
+                     let r1 = await firebase.firestore().collection('reviews').where('arr1', 'array-contains',
+                            'abc').get();
+                     for (let d of r1.docs) {
+                            console.log(d.data())
+                     }
+              }
+       </script> -->
 </body>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-storage.js"></script>
+<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/index.js"></script>
+
+
+
+
+
 </html>

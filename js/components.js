@@ -35,6 +35,47 @@ components.welcomeSceen = `
 `
 components.registerScreen = `
 <div class="register-container">
+<<<<<<< HEAD
+    <div class="bg-img">
+      <img src="./images/undraw_review_fkgn.svg">
+    </div>
+    <div class="form-wrapper">
+      <div class="register-header">
+        <img src="./images/undraw_female_avatar_w3jk.svg" alt="">
+      </div>
+      <form id="register-form">
+        <div class="name-wrapper">
+          <div class="input-wrapper">
+            <input type="text" placeholder="First name" name="firstName">
+            <div id="first-name-error" class="err"></div>
+          </div>
+          <div class="input-wrapper">
+            <input type="text" placeholder="Last name" name="lastName">
+            <div id="last-name-error" class="err"></div>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <input type="email" placeholder="Email" name="email">
+          <div id="email-error" class="err"></div>
+        </div>
+        <div class="input-wrapper">
+          <input type="password" placeholder="Password" name="password">
+          <div id="password-error" class="err"></div>
+        </div>
+        <div class="input-wrapper">
+          <input type="password" placeholder="Confirm password" name="confirmPassword">
+          <div id="confirm-password-error" class="err"></div>
+        </div>
+        <div class="register-form-action">
+          <div>
+            Already have an account?<span class="cursor-pointer" id="redirect-login">Login</span>
+          </div>
+          <button class="btn" type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>`
+=======
               <div class="bg-img">
                      <img src="./images/undraw_review_fkgn.svg">
               </div>
@@ -74,6 +115,7 @@ components.registerScreen = `
                      </form>
               </div>
        </div>`
+>>>>>>> origin/quan
 
 components.loginScreen = `
 <div class="login-container">
@@ -104,6 +146,5 @@ components.loginScreen = `
                             </div>
                      </form>
               </div>
-       </div>
-
-`
+       </div>`
+components.us = ``

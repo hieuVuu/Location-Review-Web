@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+const model={}
+model.currentUser ={}
+model.information= []
+model.currentImage={}
+=======
 const model = {}
 model.login = async ({email,password}) => {
        try {  
@@ -46,3 +52,4 @@ model.register = async ({firstname, lastname, email, password}) => {
               alert(error.message)
        }
 }
+>>>>>>> origin/quan

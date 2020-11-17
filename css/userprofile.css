@@ -1,0 +1,132 @@
+
+
+/* phần ảnh */
+
+/* ảnh đại diện */
+.profile-image-representative {
+    width: 180px;
+    height: 180px;
+    padding: 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8%;
+    z-index: 1;
+
+}
+
+
+
+.profile .profile-image-representative #image-representative {
+    border: solid 4px #d2cdcd;
+    border-radius: 100%;
+}
+
+.profile .profile-image-representative .replace {
+    border: #d2cdcd 4px;
+    size: 1.5rem    ;
+    margin-top: -22px;
+}
+
+.profile .profile-image-representative .replace .fas{
+    margin-top: -20%;
+    margin-left: 80%;
+    padding: 6px;
+    z-index: 3;
+
+}
+
+.profile .profile-image-representative .replace .input {
+    z-index: 5;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.profile .profile-image-representative .replace .input input {
+    height:28px ;
+    width: 28px;
+    z-index: 5px;
+}
+
+.profile .profile-image-representative .replace i {
+    font-size: 1.5rem;
+
+}
+
+.profile .profile-image-representative .image #image-representative {
+    width: 168px;
+    height: 168px;
+    border-radius: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    z-index: 2;
+}
+
+.profile .user-name {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+/* ảnh back ground */
+.profile .profile-background-image {
+
+    width: 900px;
+    height: 325px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+
+}
+
+.profile .profile-background-image .image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 325px;
+    border: #d2cdcd solid 4px;
+    border-radius: 15px;
+    border-radius: 15px 15px;
+    border-radius: 15px 15px 15px;
+    border-radius: 15px 15px 15px;
+    z-index: -1;
+
+}
+
+.profile .profile-background-image .image img {
+    border-radius: 15px;
+    border-radius: 15px 15px;
+    border-radius: 15px 15px 15px;
+    border-radius: 15px 15px 15px;
+
+}
+
+
+
+/* phần thông tin */
+.profile .user-information {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    height: 35%;
+    width: 45%;
+    background-color: #242526;
+    border-radius: 15px;
+    border-radius: 15px 15px;
+    border-radius: 15px 15px 15px;
+    border-radius: 15px 15px 15px;
+    display: flex;
+}
+
+.user-information .left-part {
+    border-right: solid 1px;
+    padding: 3%;
+}
+
+ol {
+    padding-left: 10px;
+}
+
+.right-part .hobbies-part .hobbies li {
+    padding-bottom: 10px;
+}
+
