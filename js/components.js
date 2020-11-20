@@ -3,19 +3,19 @@ components.welcomeSceen = `
 <div class="container">
 <div class="header-container">
        <div class="title">Unique Location</div>
-       <div class="icon-user cursor-all"">
-              <div class="dropdown">
-                     <i class="fas fa-user-circle"></i>
-                     <div class="dropdown-content">
-                            <p>Profile</p>
-                            <p id="sign-out">Sign Out</p>
-                     </div>
-              </div>
+       <div class="btn-nav">   
+       <i onclick="view.openNav()" class="fas fa-bars cursor-all"></i>  
+            <div id="mySidenav" class="sidenav">
+              <p  href="javascript:void(0)" class="closebtn cursor-all" onclick="view.closeNav()">&times;</p>
+              <p class="cursor-all" id="js-createScreen">Create Review</p>
+              <p class="cursor-all" id="js-profileScreen">Profile</p>
+              <p class="cursor-all" id="sign-out">Sign Out</p>
+            </div>
        </div>
 </div>
 <div class="main-page">
        <div class="aside-left">
-              <div class="left-title">Show the world you care</div>
+              <div class="left-title">To show how you feel the world</div>
               <div class="filter">
                      <button class="btn-main cursor-all">Coffe</button>
                      <button class="btn-main cursor-all"">Entertainment</button>
@@ -25,9 +25,16 @@ components.welcomeSceen = `
               </div>
        </div>
        <div class="location">
-              <div class="list-title">Some where you need</div>
               <div class="list-location">
-                     
+                     <a class="item-content" href="">
+                           
+                            <div class="img-item">
+                                   <img src="https://images.foody.vn/delivery/collection/s320x200/image-3b750a2e-201112111148.jpeg" alt="">
+                            </div>
+                            <div class="info-item">
+                                   <h4>Ti's House</h4>
+                            </div>
+                     </a>
               </div>
        </div>
 </div>
@@ -69,7 +76,7 @@ components.registerScreen = `
                                    <div class="line-direct">
                                           Already have an account? <span id="redirect-login">Login</span>
                                    </div>
-                                   <button type="submit" class="btn"> Register </button>
+                                   <button type="submit" class="cursor-all btn-auth"> Register </button>
                             </div>
                      </form>
               </div>
@@ -97,7 +104,7 @@ components.loginScreen = `
                                    <span id="reset-p">Forgot Password?</span>
                             </div>
                             <div id="form-action">
-                                   <button type="submit" class="btn">Sign In</button>
+                                   <button type="submit" class=" cursor-all btn-auth">Sign In</button>
                                    <div class="line-direct">
                                           Not a member? <span id="redirect-register">Sign Up</span> 
                                    </div>
@@ -105,5 +112,147 @@ components.loginScreen = `
                      </form>
               </div>
        </div>
+`
+components.createScreen = `
+<div class="container-create">
+             
+<div class="header">
+       <div class="title">
+              To show how you feel the world
+       </div>
+       <div class="btn-out cursor-all">
+              <button id="exit-btn">Exit</button>
+       </div>
+</div>
+
+<div class="post-wrapper">
+              <div class="post">
+                    <div class="post-header mg-bottom">
+                     <div class="user-ava">
+                            <i class="fas fa-user-circle"></i>
+                            <p id="user-name"></p>
+                     </div>
+                     <div>Create your post</div>
+                    </div>
+                     <form id="create-post" action="">
+                            <div class="title-post input-wrapper center">
+                                   <input type="text" name="title" placeholder="Title">
+                                   <div id="title-err" class="err"></div>
+                            </div>    
+                            <div class="up-load mg-bottom center">
+                                   <input  type="file" class="cursor-all" name="file" multiple>
+                                   <button class="cursor-all" type="submit">Upload File</button>
+                            </div>
+                            <div class="textarea mg-bottom">
+                                   <textarea name="description" id="" cols="30" rows="10" placeholder="Describe your location "></textarea>
+                                   <div id="des-err" class="err"></div>   
+                            </div>
+                            <div class="local center" id="local">
+                                   <div class="input-wrapper">
+                                   <input type="text" name="city" id="city" placeholder="City">
+                                   <div id="city-err" class="err"></div>
+                                   </div>
+                                   <div class="input-wrapper">
+                                   <input type="text" name="dicstrict" placeholder="Dicstrict">
+                                   <div id="dict-err" class="err"></div>
+                                   </div>      
+                            </div>
+                            <div class="input-wrapper center">
+                                   <input type="text" name="detailAddress" placeholder="Address">
+                                   <div id="add-err" class="err"></div>
+                            </div>
+                            <div class="btn-upload">
+                                   <button class="cursor-all" type='submit' id="post">Post</button>
+                            </div>
+                     </form>
+              </div>
+</div>
+</div>
+`
+components.profileScreen = `
+<div class="web">
+              <div class="narvigation-bar">
+                     <div class="feature">
+                            <ul>
+                                   <li><a href="#">Trang chủ</a></li>
+                                   <li><a href="#">a</a></li>
+                                   <li><a href="#">a</a></li>
+                                   <li><a href="#">a</a></li>
+                            </ul>
+                     </div>
+
+                     <div class="account-controls-setting">
+                            <div class="controls">
+                                   <div class="account">
+                                          <button href="">
+                                                 <img src="images/9-cau-noi-hay-8-1522225466.jpg" width="16" height="16"
+                                                        alt="">
+                                                 <div class="user-name">
+                                                        <span id="user-name">phan quan</span></div>
+                                          </button>
+                                   </div>
+                                   <div class="setting">
+                                          <span><button>setting</button></span>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+              <div class="profile">
+                     <div class="profile-background-image">
+                            <div class="image">
+                                   <a href="#">
+                                          <img id="image-background" src="images/9-cau-noi-hay-8-1522225466.jpg" width="900" height="325"
+                                                 alt="">
+                                   </a>
+                                   <input type="file" id="photo1" name="file" />
+                                          <button onclick="uploadImage1()">Upload Image</button>
+
+                            </div>
+                     </div>
+
+                     <div class="profile-image-representative">
+
+                            <div class="represtative">
+                                   <div class="image">
+                                          <img id="image-representative"
+                                                 src="images/EUGj-OfXgAY7zKx-e1585300534461-700x415.jpg">
+
+                                   </div>
+                                   <div class="replace">
+                                          <i class="fas fa-camera"></i>
+                                          <input type="file" id="photo2" name="file" />
+                                          <button onclick="uploadImage2()">Upload Image</button>
+                                   </div>
+
+                            </div>
+                     </div>
+                     <div class="user-name">
+                            <!-- <span id="user-name" style="color: #a2a4a8;">phan quan</span> -->
+                     </div>
+                     <div class="user-information" style="color: #a2a4a8;">
+                            <div class="left-part">
+                                   <ol class="about">
+                                          <li>detail</li>
+                                          <li>hobbies</li>
+                                   </ol>
+                            </div>
+                            <div class="right-part">
+                                   <div class="detail-part">
+                                          <ul class=detail>
+                                                 <li class="name">phan quan</li>
+                                                 <li class="telephone">123132</li>
+                                                 <li class="address">papapa</li>
+                                          </ul>
+                                   </div>
+                                   <div class="hobbies-part">
+                                          <ul class="hobbies">
+                                                 <li class="location">cafe</li>
+                                                 <li class="food">banhmi</li>
+                                                 <li class="drink">coffee</li>
+                                          </ul>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
 
 `

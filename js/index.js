@@ -11,14 +11,12 @@ const init = () => {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
- 
   firebase.auth().onAuthStateChanged(function(user) {
     var user = firebase.auth().currentUser;
     if (user) {
-      console.log(1)
       view.setActiveScreen('welcomeScreen')
     } else {
-      // No user is signed in.
+      view.setActiveScreen('loginScreen')
     }
   });
 }

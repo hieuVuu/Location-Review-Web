@@ -14,8 +14,6 @@ controller.login = ({email, password}) => {
 }
 
 controller.register = ({firstname, lastname, email, password, confirmpassword}) => {
-     confirmpassword !== password ? view.setErrMessage('#confirmpassword-err', 'Make sure your passwords match'):
-     view.setErrMessage('#confirmpassword-err', '')
      firstname === '' ? view.setErrMessage('#firstname-err', 'Input your first name.') :
      view.setErrMessage('#firstname-err', '')
      lastname === '' ? view.setErrMessage('#lastname-err', 'Input your last name.') :
@@ -38,4 +36,30 @@ controller.register = ({firstname, lastname, email, password, confirmpassword}) 
             }
             model.register(dataRegister)
      }
+}
+controller.createPost = ({title,author, dicstrict, city, address, description, media}) => {
+       dicstrict ===''? view.setErrMessage('#dict-err', 'Input dicstrict'):
+       view.setErrMessage('#dict-err', '')
+       title ===''? view.setErrMessage('#title-err', 'Input Title'):
+       view.setErrMessage('#title-err', '')
+       city ===''? view.setErrMessage('#city-err', 'Input city'):
+       view.setErrMessage('#city-err', '')
+       address ===''? view.setErrMessage('#add-err', 'Input address'):
+       view.setErrMessage('#add-err', '')
+       description ===''? view.setErrMessage('#des-err', 'Input description'):
+       view.setErrMessage('#des-err', '')
+
+       if(title!==''&& dicstrict!=='' && city!=='' && address!=='' && description!=='') {
+              const dataReview = {
+                     title: title,
+                     author: author,
+                     media: media,  
+                     dicstrict: dicstrict,
+                     city: city,
+                     address: address,
+                     description: description,
+                     createdAt: new Date().toISOString(), 
+              }
+          model.createPost(dataReview)
+       }
 }

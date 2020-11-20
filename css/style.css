@@ -7,19 +7,31 @@
 body {
        color: #110205;
 }
-.btn {
-       cursor: pointer;
-       background-color: #ff637c;
+.btn  {
+       background-color: #F9A826;
        width: 4rem;
        height: 2.25rem;
        border-radius: 5px;
+       border: 1px solid #F9A826;
+       font-weight: bold;
+       padding: 0.5rem;
+       transition: 0.2s;
+}
+.btn-auth {
+       width: 5rem;
+       height: 2.25rem;
+       border-radius: 5px;
+       background-color: #ff637c;
        border: 1px solid #ff637c;
        font-weight: bold;
-       box-sizing: border-box;
-       padding: 12px 6px;
-       size: 2rem;
+       padding: 0.5rem;
+       transition: 0.2s;
 }
-.btn:hover {
+
+.btn:hover  {
+       background-color: #f2f2f2;
+}
+.btn-auth:hover {
        background-color: #f2f2f2;
 }
 .input-wrapper input {
@@ -48,7 +60,11 @@ body {
        padding: 0.4rem;
        margin: 1rem;
        font-size: 1.2rem;
+       transition: 0.3s;
 }
 .btn-main:hover {
        background-color: rgb(179, 206, 223);
+}
+.mg-bottom {
+       margin-bottom: 1rem;
 }

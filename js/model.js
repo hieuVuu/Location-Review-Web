@@ -2,7 +2,6 @@ const model = {}
 model.login = async ({email,password}) => {
        try {  
               const response =  await firebase.auth().signInWithEmailAndPassword(email, password)
-              console.log(response)
               const user = response.user
               if(user.emailVerified) {
                      view.setActiveScreen('welcomeScreen')     
@@ -45,4 +44,14 @@ model.register = async ({firstname, lastname, email, password}) => {
        } catch (error) {
               alert(error.message)
        }
+}
+model.createPost = async (data) => {
+    try {
+       const datatoAdd = data;
+       await firebase.firestore().collection('Reviews').add(datatoAdd)
+       alert('post success')
+       location.reload()
+    } catch (error) {
+           alert(error.message)
+    }
 }
