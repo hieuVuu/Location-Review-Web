@@ -8,7 +8,7 @@
 }
 .container .header-container {
        display: flex;
-       height: 5rem;
+       height: 6rem;
        justify-content: center;
        align-items: center;
        position: relative;
@@ -67,33 +67,82 @@
        font-size: 1.4rem;
        padding: 2rem;
 }
-.container .location {
-       width: 70%;
-       margin-top: 2rem;
+.container .aside-right {     
+       margin-left: 2rem;
+       width: 60%;
+       background-color: white;
+       height: 37rem;
+       border-radius: 1rem;
 }
-.container .location .create-post {
-       display: flex;
+.container .aside-right .header-right {
        position: relative;
+       height: 2rem;
+       display: flex;
+       justify-content: space-between;
 }
-.container .location .list-title {
-       font-size: 1.5rem;
+.container .aside-right .header-right .col-select {
+       position: absolute;
+       top: 1.5rem;
+       right: 2rem;
+}
+.container .aside-right .header-right .col-select select {
+       font-size: 1rem;
+       font-weight: 600;
+}
+.container .aside-right .list-item {
+       overflow-y: auto;
+       margin: 2rem 2rem 1rem ;
+       width: 95%;
+       height: 80%;
+}
+.container .aside-right .header-right button {
+       margin: 1rem 3rem;
+       border: none;
+       background-color: white;
+       font-size: 1.2rem;
        font-weight: 500;
-       margin-bottom: 1rem;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+}
+.container .aside-right .header-right button:hover {
+       color: rgb(94, 171, 243);
+}
+.container .aside-right .item {
        position: relative;
-}
-.list-location {
-       background-color: cornsilk;
-       height: calc(100vh - 12rem);
-       width: 90%;
-}
-.container .list-location {
        display: flex;
-       padding: 2rem;
-       border-radius: 0.5rem;
+       height: 7rem;
+       margin: 1rem;
 }
+.container .aside-right .item .short-description {
+       position: absolute;
+       left: 13rem;
+}
+.container .aside-right .item .item-title {
+       font-weight: 600;
+       font-size: 1.2rem;
+}
+.container .aside-right .item .author {
+       bottom: -4rem;
+       position: absolute;
+       font-weight: 600;
+}
+
+.container .aside-right .item img{
+       height: 7rem;
+       width: auto;
+       border-radius: 0.25rem;
+}
+#style-scroll::-webkit-scrollbar {
+       width: 0.7rem;
+       background-color: white;
+}
+#style-scroll::-webkit-scrollbar-thumb {
+       background-color: #a3a2a2;
+       border-radius: 1rem
+} 
+
+
+
+
+
 
 
 

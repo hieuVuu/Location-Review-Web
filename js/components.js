@@ -1,44 +1,110 @@
 const components = {}
 components.welcomeSceen = `
 <div class="container">
-<div class="header-container">
-       <div class="title">Unique Location</div>
-       <div class="btn-nav">   
-       <i onclick="view.openNav()" class="fas fa-bars cursor-all"></i>  
-            <div id="mySidenav" class="sidenav">
-              <p  href="javascript:void(0)" class="closebtn cursor-all" onclick="view.closeNav()">&times;</p>
-              <p class="cursor-all" id="js-createScreen">Create Review</p>
-              <p class="cursor-all" id="js-profileScreen">Profile</p>
-              <p class="cursor-all" id="sign-out">Sign Out</p>
-            </div>
-       </div>
-</div>
-<div class="main-page">
-       <div class="aside-left">
-              <div class="left-title">To show how you feel the world</div>
-              <div class="filter">
-                     <button class="btn-main cursor-all">Coffe</button>
-                     <button class="btn-main cursor-all"">Entertainment</button>
-                     <button class="btn-main cursor-all"">Travel</button>
-                     <button class="btn-main cursor-all"">Student</button>
-                     <button class="btn-main cursor-all"">Animals</button>
+              <div class="header-container">
+                     <div class="title">Unique Location</div>
+                     <div class="btn-nav">   
+                     <i onclick="view.openNav()" class="fas fa-bars cursor-all"></i>  
+                          <div id="mySidenav" class="sidenav">
+                            <p  href="javascript:void(0)" class="closebtn cursor-all" onclick="view.closeNav()">&times;</p>
+                            <p class="cursor-all" id="">City</p>
+                            <p class="cursor-all" id="js-createScreen">Create Review</p>
+                            <p class="cursor-all" id="js-profileScreen">Profile</p>
+                            <p class="cursor-all" id="sign-out">Sign Out</p>
+                          </div>
+                     </div>
+              </div>
+              <div class="main-page">
+
+                     <div class="aside-left">
+                            <div class="left-title">To show how you feel the world</div>
+                            <div class="filter">
+                                   <button class="btn-main cursor-all">Coffe</button>
+                                   <button class="btn-main cursor-all"">Entertainment</button>
+                                   <button class="btn-main cursor-all"">Travel</button>
+                                   <button class="btn-main cursor-all"">Student</button>
+                                   <button class="btn-main cursor-all"">Animals</button>
+                            </div>
+                     </div>
+                     <div class="aside-right">
+                            <div class="header-right">
+                                   <div class="btn-filter">
+                                          <button class="cursor-all">Near me</button>
+                                          <button class="cursor-all">Special</button>
+                                          <button class="cursor-all">Cheap for student</button>
+                                   </div>
+                                   <div class="col-select">
+                                          <select name="Dicstrict" id="" class="cursor-all">
+                                                 <option value="">Choose Dicstrict</option>
+                                                 <option value="1">Ba Đình</option>
+                                                 <option value="21">Cầu Giấy</option>
+                                                 <option value="31">Đống Đa</option>
+                                                 <option value="51">Thanh Xuân</option>
+                                                 <option value="41">Hoàn Kiếm</option>
+                                          </select>
+                                   </div>
+                            </div> 
+
+                            <div class="list-item" id="style-scroll"> 
+                                   <div class="item cursor-all">
+                                          <div class="item-img">
+                                                 <img class="cursor-all" src="https://images.foody.vn/res/g103/1021281/prof/s280x175/foody-upload-api-foody-mobile-foody-upload-api-foo-200429113318.jpg" alt="">
+                                          </div>
+                                          <div class="short-description">
+                                                 <div class="item-title cursor-all">Gà Luộc Siêu Ngon</div>
+                                                 <div class="item-info cursor-all">Như Quỳnh - Văn Lâm - Hưng Yên </div>
+                                                 <div class="author cursor-all">Author: hieuvu</div>
+                                          </div>
+                                   </div>
+                                   <div class="item cursor-all">
+                                          <div class="item-img">
+                                                 <img class="cursor-all" src="https://images.foody.vn/res/g103/1021281/prof/s280x175/foody-upload-api-foody-mobile-foody-upload-api-foo-200429113318.jpg" alt="">
+                                          </div>
+                                          <div class="short-description">
+                                                 <div class="item-title cursor-all">Gà Luộc Siêu Ngon</div>
+                                                 <div class="item-info cursor-all">Như Quỳnh - Văn Lâm - Hưng Yên </div>
+                                                 <div class="author cursor-all">Author: hieuvu</div>
+                                          </div>
+                                   </div>
+                                   <div class="item cursor-all">
+                                          <div class="item-img">
+                                                 <img class="cursor-all" src="https://images.foody.vn/res/g103/1021281/prof/s280x175/foody-upload-api-foody-mobile-foody-upload-api-foo-200429113318.jpg" alt="">
+                                          </div>
+                                          <div class="short-description">
+                                                 <div class="item-title cursor-all">Gà Luộc Siêu Ngon</div>
+                                                 <div class="item-info cursor-all">Như Quỳnh - Văn Lâm - Hưng Yên </div>
+                                                 <div class="author cursor-all">Author: hieuvu</div>
+                                          </div>
+                                   </div>
+                                   <div class="item cursor-all">
+                                          <div class="item-img">
+                                                 <img class="cursor-all" src="https://images.foody.vn/res/g103/1021281/prof/s280x175/foody-upload-api-foody-mobile-foody-upload-api-foo-200429113318.jpg" alt="">
+                                          </div>
+                                          <div class="short-description">
+                                                 <div class="item-title cursor-all">Gà Luộc Siêu Ngon</div>
+                                                 <div class="item-info cursor-all">Như Quỳnh - Văn Lâm - Hưng Yên </div>
+                                                 <div class="author cursor-all">Author: hieuvu</div>
+                                          </div>
+                                   </div>
+                                   <div class="item cursor-all">
+                                          <div class="item-img">
+                                                 <img class="cursor-all" src="https://images.foody.vn/res/g103/1021281/prof/s280x175/foody-upload-api-foody-mobile-foody-upload-api-foo-200429113318.jpg" alt="">
+                                          </div>
+                                          <div class="short-description">
+                                                 <div class="item-title cursor-all">Gà Luộc Siêu Ngon</div>
+                                                 <div class="item-info cursor-all">Như Quỳnh - Văn Lâm - Hưng Yên </div>
+                                                 <div class="author cursor-all">Author: hieuvu</div>
+                                          </div>
+                                   </div>
+
+                                   
+                                  
+                            </div>
+
+                     </div>
+                     
               </div>
        </div>
-       <div class="location">
-              <div class="list-location">
-                     <a class="item-content" href="">
-                           
-                            <div class="img-item">
-                                   <img src="https://images.foody.vn/delivery/collection/s320x200/image-3b750a2e-201112111148.jpeg" alt="">
-                            </div>
-                            <div class="info-item">
-                                   <h4>Ti's House</h4>
-                            </div>
-                     </a>
-              </div>
-       </div>
-</div>
-</div>
 `
 components.registerScreen = `
 <div class="register-container">
