@@ -59,7 +59,7 @@ view.setActiveScreen = (screenName) => {
               })
               document.getElementById('js-profileScreen').addEventListener('click', (e)=> {
                      e.preventDefault()
-                     view.setActiveScreen('profileScreen')
+                     view.setActiveScreen('profileUser')
               })
               // get cac post 
               model.getPosts() 
@@ -99,6 +99,14 @@ view.setActiveScreen = (screenName) => {
                      e.preventDefault()
                      view.setActiveScreen('welcomeScreen')
               })
+              break;
+              case 'profileUser':
+                     document.getElementById('app').innerHTML = components.profileUser
+                     document.getElementById('back-homePage').addEventListener('click', (e)=> {
+                            e.preventDefault()
+                            view.setActiveScreen('welcomeScreen')
+                     })
+
               break;
               
        }    

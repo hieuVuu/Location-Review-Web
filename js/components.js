@@ -179,3 +179,66 @@ components.createScreen = `
        </div>
 </div>
 `
+components.profileUser = `
+<div class="container-user">
+              <div class="header">
+                     <div class="title">
+                            Feel the world
+                     </div>
+                     <div class="btn-back">
+                            <button class="cursor-all" id="back-homePage">
+                                   <i class="fas fa-chevron-left"></i>
+                                   Back
+                            </button>
+                     </div>
+              </div>
+              <div class="user-main">
+                     <div class="aside-left">
+                            <div class="user">
+                                   <div class="img-ava">
+                                          <img class="cursor-all" src="https://www.flaticon.com/svg/static/icons/svg/149/149071.svg" alt="" style="height: 100px;">
+                                          <label for="user-img"><i class="fas fa-camera"></i></label>
+                                          <input type="file" name="" id="user-img">
+                                   </div>
+                                   <div class="user-name">Hieuvu</div>
+                            </div>
+                            <div class="setting">
+                                   <div class="account">
+                                          <button class="cursor-all">Your account</button>
+                                   </div>
+                                   <div class="user-post">
+                                          <button class="cursor-all">Your post</button>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="aside-right">
+                            <div class="user-account">
+                                   <i class="far fa-address-card"></i>
+                                   <h1>Account</h1>
+                            </div>
+                            <div class="infor-authen mg-1">
+                                   <div class="title-infor mg-1">Thông tin đăng nhập</div>
+                                   <div class="password mg-1">
+                                          <h2>Mật hhẩu</h2>
+                                          <div>password</div>
+                                   </div>
+                                   <div class="email mg-1">
+                                          <h2>Email</h2>
+                                          <div>email</div>
+                                   </div>
+                            </div>
+                            <div class="infor-user mg-1">
+                                   <div class="title-infor mg-1">Thông tin cá nhân</div>
+                                   <div class="canhan mg-1">
+                                          <h2>Cá Nhân</h2>
+                                          <div>ABC</div>
+                                   </div>
+                                   <div class="language mg-1">
+                                          <h2>Ngôn ngữ</h2>
+                                          <div>Tiếng việt</div>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </div>
+`

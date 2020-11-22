@@ -1,0 +1,80 @@
+.container-user {
+       width: 100vw;
+       height: 100vh;
+}
+.container-user .header {
+       height: 5rem;
+       background-color: rgb(52, 145, 122);
+       display: flex;
+       justify-content: space-between;
+       padding: 1rem 6rem;
+       font-size: 2rem;
+       font-weight: 700;
+       color: white;
+}
+body > div > div.user-main > div.aside-left > div.user > div.img-ava > label > i {
+       font-size: 1.3rem;
+}
+.container-user .header button {
+       font-size: 1.2rem;
+       padding: 0.8rem 1rem;
+       border-radius: 0.2rem;
+       border: 1.5px solid white;
+       background-color: rgb(52, 145, 122);
+       color: white;
+       font-weight: 500;
+       width: 7rem;
+}
+.container-user .header button:hover {
+       transition: all 0.5s;
+       font-weight: 800; 
+       background-color: rgb(84, 168, 147);
+}
+body > div > div.header > div.btn-back > button > i {
+       margin-right: 0.5rem;
+}
+.container-user .user-main {
+       height: calc(100vh - 5rem);
+       display: flex;
+}
+.container-user .user-main .aside-left {
+       width: 35%;
+}
+.container-user .user-main .aside-right {
+       width: 65%;
+}
+.container-user .user-main .aside-right .user-account {
+       margin:3rem 2rem;
+       display: flex;
+}
+.container-user .user-main .aside-right .user-account i {
+       font-size: 3rem;
+       margin-right: 2rem;
+}
+.container-user .user-main .aside-right .infor-user {
+       margin-top: 3rem;
+}
+.mg-1 {
+       margin: 1rem 1rem;
+}
+.container-user .user-main .aside-left .user {
+       display: flex;
+       margin: 3rem 3rem;
+}
+.container-user .user-main .aside-left .setting {
+       margin: 4rem 3rem;
+}
+.container-user .user-main .aside-left .setting button {
+       border: 1px solid rgb(52, 145, 122);
+       padding: 1rem;
+       margin-top: 1.2rem;
+       background-color: unset;
+       width: 12rem;
+       border-radius: 0.3rem;
+       color: rgb(52, 145, 122);
+       font-size: 1.2rem;
+       font-weight: 700;
+}
+input#user-img {
+       display: none;
+}

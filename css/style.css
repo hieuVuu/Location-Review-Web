@@ -2,10 +2,7 @@
        margin: 0;
        padding: 0;
        box-sizing: border-box;
-       font-family: 'Space Grotesk', sans-serif;
-      }
-body {
-       color: #110205;
+       font-family: 'Roboto', sans-serif;
 }
 .btn  {
        background-color: #F9A826;
@@ -40,6 +37,7 @@ body {
        border: 1px solid #ff637c;
        width: 100%;
        padding: 12px 10px;
+       outline: none;
 }
 .input-wrapper {
        margin-bottom: 1rem;
@@ -51,6 +49,9 @@ body {
        color: red;
        font-size: 0.9rem;
        padding: 2px 2px;
+}
+button {
+       outline: none;
 }
 .btn-main {
        border-radius: 5px;

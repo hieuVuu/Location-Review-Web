@@ -8,17 +8,16 @@
 }
 .container-create .header {
        display: flex;
-       height: 3rem;
+       height: 4rem;
        justify-content: center;
        align-items: center;
-       font-weight: 600;
 }
 .container-create .post-wrapper {
        margin-top: 1rem;
        position: relative;
 }
 .container-create .post-wrapper{
-       background-color: rgb(50, 148, 123);
+       background-color: rgb(52, 145, 122);
        height: 37rem;
        width: 44rem;
        border-radius: 1rem;
@@ -33,10 +32,11 @@
        width: 35rem;
 }
 .container-create .header .title {
-      font-size: 1.5rem;
-      font-weight: 500;
+      font-size: 1.75rem;
+      font-weight: 700;
 }
 .container-create .post-wrapper .post-header {
+       color: wheat;
        display: flex;
        justify-content: space-between;
        font-size: large;
@@ -99,7 +99,7 @@
 }
 .footer button:hover {
        transition: 0.3s;
-       background-color: #fda450;
+       background-color: rgb(245, 203, 126);
        color: black;
 }
 input#file-input {
@@ -116,7 +116,7 @@ input#file-input + label {
 }
 input#file-input + label:hover {
        color: black;
-       background-color: #fda450;
+       background-color: rgb(235, 191, 109);
 }
 
 
