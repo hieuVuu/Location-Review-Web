@@ -128,7 +128,7 @@ components.createScreen = `
        <div class="header">
               <div class="title">To show how you feel the world</div>
        </div>
-              
+ 
        <div class="post-wrapper">
               <div class="post-header mg-bottom">
                      <div class="user-ava">
@@ -144,7 +144,7 @@ components.createScreen = `
                      </div>    
                      <div class="process">
                             <div class="textarea mg-bottom">
-                                   <textarea name="description" id="style-scroll" cols="30" rows="10" placeholder="Describe your location "></textarea>
+                                   <textarea id="style-scroll" name="description" cols="30" rows="10" placeholder="Describe your location "></textarea>
                                    <div id="des-err" class="err"></div>   
                             </div>
                             <div class="up-load ">

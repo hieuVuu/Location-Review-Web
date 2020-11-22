@@ -61,14 +61,9 @@ view.setActiveScreen = (screenName) => {
                      e.preventDefault()
                      view.setActiveScreen('profileScreen')
               })
-
               // get cac post 
               model.getPosts() 
               // show current post 
-
-
-              
-
               break;
 
               case 'createScreen' :
@@ -104,7 +99,6 @@ view.setActiveScreen = (screenName) => {
                      e.preventDefault()
                      view.setActiveScreen('welcomeScreen')
               })
-
               break;
               
        }    
