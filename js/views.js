@@ -47,7 +47,6 @@ view.setActiveScreen = (screenName) => {
               document.getElementById('app').innerHTML = components.welcomeSceen
               document.getElementById('sign-out').addEventListener('click', (e)=> {
                      e.preventDefault()
-                     var user = firebase.auth().currentUser;
                      firebase.auth().signOut().then(function() {
                             view.setActiveScreen('registerScreen')
                           }).catch(function(error) {
@@ -62,6 +61,14 @@ view.setActiveScreen = (screenName) => {
                      e.preventDefault()
                      view.setActiveScreen('profileScreen')
               })
+
+              // get cac post 
+              model.getPosts() 
+              // show current post 
+
+
+              
+
               break;
 
               case 'createScreen' :
@@ -113,6 +120,21 @@ view.openNav = () => {
 }
 view.closeNav = () => {
        document.getElementById('mySidenav').style.width = "0rem"
+}
+
+view.showAllPost = (post) => {
+       const itemWrapper = document.createElement('div')
+       itemWrapper.classList.add('item')
+       itemWrapper.innerHTML = `
+              <div class="item-img">
+                     <img class="cursor-all" src="${post.media[0]}" alt="">
+              </div>
+              <div class="short-description">
+                     <div class="item-title cursor-all">${post.title}</div>
+                     <div class="item-info cursor-all">${post.address}</div>
+                     <div class="author cursor-all">By: ${post.author}</div>
+              </div> `
+       document.querySelector('.list-item').appendChild(itemWrapper)
 }
 
 

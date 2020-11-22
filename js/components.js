@@ -44,65 +44,9 @@ components.welcomeSceen = `
                                           </select>
                                    </div>
                             </div> 
-
-                            <div class="list-item" id="style-scroll"> 
-                                   <div class="item cursor-all">
-                                          <div class="item-img">
-                                                 <img class="cursor-all" src="https://images.foody.vn/res/g103/1021281/prof/s280x175/foody-upload-api-foody-mobile-foody-upload-api-foo-200429113318.jpg" alt="">
-                                          </div>
-                                          <div class="short-description">
-                                                 <div class="item-title cursor-all">Gà Luộc Siêu Ngon</div>
-                                                 <div class="item-info cursor-all">Như Quỳnh - Văn Lâm - Hưng Yên </div>
-                                                 <div class="author cursor-all">Author: hieuvu</div>
-                                          </div>
-                                   </div>
-                                   <div class="item cursor-all">
-                                          <div class="item-img">
-                                                 <img class="cursor-all" src="https://images.foody.vn/res/g103/1021281/prof/s280x175/foody-upload-api-foody-mobile-foody-upload-api-foo-200429113318.jpg" alt="">
-                                          </div>
-                                          <div class="short-description">
-                                                 <div class="item-title cursor-all">Gà Luộc Siêu Ngon</div>
-                                                 <div class="item-info cursor-all">Như Quỳnh - Văn Lâm - Hưng Yên </div>
-                                                 <div class="author cursor-all">Author: hieuvu</div>
-                                          </div>
-                                   </div>
-                                   <div class="item cursor-all">
-                                          <div class="item-img">
-                                                 <img class="cursor-all" src="https://images.foody.vn/res/g103/1021281/prof/s280x175/foody-upload-api-foody-mobile-foody-upload-api-foo-200429113318.jpg" alt="">
-                                          </div>
-                                          <div class="short-description">
-                                                 <div class="item-title cursor-all">Gà Luộc Siêu Ngon</div>
-                                                 <div class="item-info cursor-all">Như Quỳnh - Văn Lâm - Hưng Yên </div>
-                                                 <div class="author cursor-all">Author: hieuvu</div>
-                                          </div>
-                                   </div>
-                                   <div class="item cursor-all">
-                                          <div class="item-img">
-                                                 <img class="cursor-all" src="https://images.foody.vn/res/g103/1021281/prof/s280x175/foody-upload-api-foody-mobile-foody-upload-api-foo-200429113318.jpg" alt="">
-                                          </div>
-                                          <div class="short-description">
-                                                 <div class="item-title cursor-all">Gà Luộc Siêu Ngon</div>
-                                                 <div class="item-info cursor-all">Như Quỳnh - Văn Lâm - Hưng Yên </div>
-                                                 <div class="author cursor-all">Author: hieuvu</div>
-                                          </div>
-                                   </div>
-                                   <div class="item cursor-all">
-                                          <div class="item-img">
-                                                 <img class="cursor-all" src="https://images.foody.vn/res/g103/1021281/prof/s280x175/foody-upload-api-foody-mobile-foody-upload-api-foo-200429113318.jpg" alt="">
-                                          </div>
-                                          <div class="short-description">
-                                                 <div class="item-title cursor-all">Gà Luộc Siêu Ngon</div>
-                                                 <div class="item-info cursor-all">Như Quỳnh - Văn Lâm - Hưng Yên </div>
-                                                 <div class="author cursor-all">Author: hieuvu</div>
-                                          </div>
-                                   </div>
-
-                                   
-                                  
+                            <div class="list-item" id="style-scroll">      
                             </div>
-
-                     </div>
-                     
+                     </div>  
               </div>
        </div>
 `

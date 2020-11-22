@@ -1,4 +1,7 @@
 const model = {}
+model.currentPost = {}
+model.posts = []
+
 model.login = async ({email,password}) => {
        try {  
               const response =  await firebase.auth().signInWithEmailAndPassword(email, password)
@@ -14,6 +17,7 @@ model.login = async ({email,password}) => {
               alert(error.message)
        }
 }
+
 model.resetPassword = async (emailAddress) => {
        try {
                await firebase.auth().sendPasswordResetEmail(emailAddress)
@@ -22,6 +26,7 @@ model.resetPassword = async (emailAddress) => {
               alert(error.message)
        }
 }
+
 model.register = async ({firstname, lastname, email, password}) => {
        try {
                await firebase.auth().createUserWithEmailAndPassword(email, password)
@@ -45,13 +50,29 @@ model.register = async ({firstname, lastname, email, password}) => {
               alert(error.message)
        }
 }
+
 model.createPost = async (data) => {
     try {
        const datatoAdd = data;
        await firebase.firestore().collection('Reviews').add(datatoAdd)
        alert('post success')
-       location.reload()
+       location.reload()    
     } catch (error) {
            alert(error.message)
     }
 }
+
+model.getPosts = async () => {
+ const response =  await firebase.firestore().collection('Reviews').get()
+ model.posts = getDataFromDocs(response.docs)
+ console.log(model.posts)
+ if(model.posts.length > 0) {
+        model.posts.reverse()
+        model.posts.map(post => {
+              view.showAllPost(post)
+        })
+ }
+}
+// firebaseQueries =    async () => {
+
+// }

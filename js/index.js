@@ -19,5 +19,16 @@ const init = () => {
       view.setActiveScreen('loginScreen')
     }
   });
+  
 }
 window.onload = init
+
+getDataFromDocs = (docs) => {
+  let arr = [];
+  docs.map(oneDoc => {
+   arr.push(oneDoc.data())
+  })
+  return arr;
+}
+
+  

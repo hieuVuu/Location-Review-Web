@@ -120,12 +120,10 @@
        font-size: 1.2rem;
 }
 .container .aside-right .item .author {
-       bottom: -4rem;
-       position: absolute;
        font-weight: 600;
 }
-
 .container .aside-right .item img{
+       max-width: 12rem;
        height: 7rem;
        width: auto;
        border-radius: 0.25rem;
