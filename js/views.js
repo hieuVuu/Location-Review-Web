@@ -106,9 +106,7 @@ view.setActiveScreen = (screenName) => {
               })
 
               break;
-              case 'profileScreen':
-                     document.getElementById('app').innerHTML = components.profileScreen
-              break;
+              
        }    
 }
 

@@ -11,35 +11,36 @@
        height: 3rem;
        justify-content: center;
        align-items: center;
+       font-weight: 600;
 }
 .container-create .post-wrapper {
        margin-top: 1rem;
        position: relative;
 }
-.container-create .post-wrapper .post {
-       background-color:#F9A826;
+.container-create .post-wrapper{
+       background-color:#f7672e;
        height: 37rem;
-        width: 44rem;
-        border-radius: 1rem;
-        padding: 2rem;
-        position: fixed;
-        left: 27%;
+       width: 44rem;
+       border-radius: 1rem;
+       padding: 2rem;
+       position: fixed;
+       left: 26%;
+}
+.container-create .post-wrapper #create-post{
+       left: 5rem;
+       height: 34rem;
+       position: absolute;
+       width: 35rem;
 }
 .container-create .header .title {
       font-size: 1.5rem;
-      position: relative;
       font-weight: 500;
-}
-.container-create .header .btn-out {
-       position: fixed;
-       right: 6rem;
-       top: 4rem;
 }
 .container-create .post-wrapper .post-header {
        display: flex;
        justify-content: space-between;
        font-size: large;
-       font-weight: 500;     
+       font-weight: 600;     
 }
 .container-create .post-wrapper .post-header .user-ava {
        display: flex;
@@ -54,60 +55,70 @@
 .container-create .post-wrapper #upload-file .up-photo {
        height: 3rem;
 }
-#create-post {
-       position: relative;
-}
-#create-post input {
-       outline: none;
-}
-#create-post .up-load input ,button {
-       font-size: 1rem;
-       border: none;
-       outline: none;
-}
 .container-create .post-wrapper #create-post textarea {
        height: 8rem;
-       width: 80%;
+       width: 27rem;
        resize: none;
        overflow: auto;
        font-size: 1rem;
        padding: 1rem;
        border: none;
-       position: relative;
-       left: 4rem;
        border-radius: 1rem;   
        outline: none; 
 }
-#create-post input {
-  width: 60%;
-}
-.center {
+.container-create .post-wrapper .process {
+       position: relative;
        display: flex;
-      justify-content: center;
-      align-items: center;
-
+       justify-content: space-between;
+}
+#create-post > div.process > div.up-load > label {
+       position: absolute;
+       top: 2rem;
+       right: 0;
+}
+#create-post .local {
+       display: flex;
+       justify-content: space-between;
 }
 .title-post{
        font-size: 1.5rem;
 }
-button {
-       font-size: large;
-       padding: 0.5rem;
-       border-radius: 0.5rem;
+.footer {
+       margin-top: 2rem;
+       display: flex;
+       justify-content: space-between;
 }
-button:hover {
-       background-color:  rgb(179, 206, 223);
+.footer button {
+       background-color:#5ac5f7;
+       color: black;
+       padding: 1rem;
+       border-radius: 1rem;
+       font-weight: 600;
+       font-size: 1rem;
+       border: none;
+}
+.footer button:hover {
        transition: 0.3s;
+       background-color: #48c0f0;
+       color: black;
 }
-.btn-upload{
-       position: relative;
+input#file-input {
+       display: none;
 }
-.btn-upload button {
-       position: fixed;
-       left: 70%;    
-       bottom: 4rem;
+input#file-input + label {
+       background-color: #82d4f5;
+       font-size: large;
+       padding: 1rem;
+       border-radius: 1rem;
+       font-weight: bold;
+       color: black;
 }
-#local {
-       margin-left: 5.2rem;
+input#file-input + label:hover {
+       color: black;
+       background-color: #43c1f3;
 }
+
+
+
+
 

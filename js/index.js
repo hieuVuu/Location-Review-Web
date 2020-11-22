@@ -14,7 +14,7 @@ const init = () => {
   firebase.auth().onAuthStateChanged(function(user) {
     var user = firebase.auth().currentUser;
     if (user) {
-      view.setActiveScreen('welcomeScreen')
+      view.setActiveScreen('createScreen')
     } else {
       view.setActiveScreen('loginScreen')
     }

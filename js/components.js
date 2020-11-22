@@ -124,145 +124,58 @@ components.loginScreen = `
        </div>
 `
 components.createScreen = `
-<div class="container-create">
-             
-<div class="header">
-       <div class="title">
-              To show how you feel the world
+<div class="container-create">      
+       <div class="header">
+              <div class="title">To show how you feel the world</div>
        </div>
-       <div class="btn-out cursor-all">
-              <button id="exit-btn">Exit</button>
-       </div>
-</div>
-
-<div class="post-wrapper">
-              <div class="post">
-                    <div class="post-header mg-bottom">
+              
+       <div class="post-wrapper">
+              <div class="post-header mg-bottom">
                      <div class="user-ava">
                             <i class="fas fa-user-circle"></i>
                             <p id="user-name"></p>
                      </div>
                      <div>Create your post</div>
-                    </div>
-                     <form id="create-post" action="">
-                            <div class="title-post input-wrapper center">
-                                   <input type="text" name="title" placeholder="Title">
-                                   <div id="title-err" class="err"></div>
-                            </div>    
-                            <div class="up-load mg-bottom center">
-                                   <input  type="file" class="cursor-all" name="file" multiple>
-                                   <button class="cursor-all" type="submit">Upload File</button>
-                            </div>
+              </div>
+              <form id="create-post" action="">
+                     <div class="title-post input-wrapper">
+                            <input type="text" name="title" placeholder="Title">
+                            <div id="title-err" class="err"></div>
+                     </div>    
+                     <div class="process">
                             <div class="textarea mg-bottom">
-                                   <textarea name="description" id="" cols="30" rows="10" placeholder="Describe your location "></textarea>
+                                   <textarea name="description" id="style-scroll" cols="30" rows="10" placeholder="Describe your location "></textarea>
                                    <div id="des-err" class="err"></div>   
                             </div>
-                            <div class="local center" id="local">
-                                   <div class="input-wrapper">
+                            <div class="up-load ">
+                                   <input  type="file" id="file-input" class="cursor-all" name="file" multiple>
+                                   <label for="file-input" class="btn-2 cursor-all">upload</label>
+                            </div>
+                     </div>
+                     <div class="local">
+                            <div class="input-wrapper">
                                    <input type="text" name="city" id="city" placeholder="City">
                                    <div id="city-err" class="err"></div>
-                                   </div>
-                                   <div class="input-wrapper">
+                            </div>
+                            <div class="input-wrapper">
                                    <input type="text" name="dicstrict" placeholder="Dicstrict">
                                    <div id="dict-err" class="err"></div>
-                                   </div>      
-                            </div>
-                            <div class="input-wrapper center">
-                                   <input type="text" name="detailAddress" placeholder="Address">
-                                   <div id="add-err" class="err"></div>
+                            </div>      
+                     </div>
+                     <div class="input-wrapper">
+                            <input type="text" name="detailAddress" placeholder="Address">
+                            <div id="add-err" class="err"></div>
+                     </div>
+                     <div class="footer">
+                            <div class="btn-out cursor-all">
+                                   <button id="exit-btn">Exit</button>
                             </div>
                             <div class="btn-upload">
                                    <button class="cursor-all" type='submit' id="post">Post</button>
                             </div>
-                     </form>
-              </div>
+                     </div>
+              </form>
+                           
+       </div>
 </div>
-</div>
-`
-components.profileScreen = `
-<div class="web">
-              <div class="narvigation-bar">
-                     <div class="feature">
-                            <ul>
-                                   <li><a href="#">Trang chủ</a></li>
-                                   <li><a href="#">a</a></li>
-                                   <li><a href="#">a</a></li>
-                                   <li><a href="#">a</a></li>
-                            </ul>
-                     </div>
-
-                     <div class="account-controls-setting">
-                            <div class="controls">
-                                   <div class="account">
-                                          <button href="">
-                                                 <img src="images/9-cau-noi-hay-8-1522225466.jpg" width="16" height="16"
-                                                        alt="">
-                                                 <div class="user-name">
-                                                        <span id="user-name">phan quan</span></div>
-                                          </button>
-                                   </div>
-                                   <div class="setting">
-                                          <span><button>setting</button></span>
-                                   </div>
-                            </div>
-                     </div>
-              </div>
-              <div class="profile">
-                     <div class="profile-background-image">
-                            <div class="image">
-                                   <a href="#">
-                                          <img id="image-background" src="images/9-cau-noi-hay-8-1522225466.jpg" width="900" height="325"
-                                                 alt="">
-                                   </a>
-                                   <input type="file" id="photo1" name="file" />
-                                          <button onclick="uploadImage1()">Upload Image</button>
-
-                            </div>
-                     </div>
-
-                     <div class="profile-image-representative">
-
-                            <div class="represtative">
-                                   <div class="image">
-                                          <img id="image-representative"
-                                                 src="images/EUGj-OfXgAY7zKx-e1585300534461-700x415.jpg">
-
-                                   </div>
-                                   <div class="replace">
-                                          <i class="fas fa-camera"></i>
-                                          <input type="file" id="photo2" name="file" />
-                                          <button onclick="uploadImage2()">Upload Image</button>
-                                   </div>
-
-                            </div>
-                     </div>
-                     <div class="user-name">
-                            <!-- <span id="user-name" style="color: #a2a4a8;">phan quan</span> -->
-                     </div>
-                     <div class="user-information" style="color: #a2a4a8;">
-                            <div class="left-part">
-                                   <ol class="about">
-                                          <li>detail</li>
-                                          <li>hobbies</li>
-                                   </ol>
-                            </div>
-                            <div class="right-part">
-                                   <div class="detail-part">
-                                          <ul class=detail>
-                                                 <li class="name">phan quan</li>
-                                                 <li class="telephone">123132</li>
-                                                 <li class="address">papapa</li>
-                                          </ul>
-                                   </div>
-                                   <div class="hobbies-part">
-                                          <ul class="hobbies">
-                                                 <li class="location">cafe</li>
-                                                 <li class="food">banhmi</li>
-                                                 <li class="drink">coffee</li>
-                                          </ul>
-                                   </div>
-                            </div>
-                     </div>
-              </div>
-
 `

@@ -128,14 +128,6 @@
        width: auto;
        border-radius: 0.25rem;
 }
-#style-scroll::-webkit-scrollbar {
-       width: 0.7rem;
-       background-color: white;
-}
-#style-scroll::-webkit-scrollbar-thumb {
-       background-color: #a3a2a2;
-       border-radius: 1rem
-} 
 
 
 
