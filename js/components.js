@@ -199,6 +199,7 @@ components.profileUser = `
                                           <img class="cursor-all" src="https://www.flaticon.com/svg/static/icons/svg/149/149071.svg" alt="" style="height: 100px;">
                                           <label for="user-img"><i class="fas fa-camera"></i></label>
                                           <input type="file" name="" id="user-img">
+                                          <input type="submit">
                                    </div>
                                    <div class="user-name">Hieuvu</div>
                             </div>
@@ -220,7 +221,7 @@ components.profileUser = `
                                    <div class="title-infor mg-1">Thông tin đăng nhập</div>
                                    <div class="password mg-1">
                                           <h2>Mật hhẩu</h2>
-                                          <div>password</div>
+                                          <div>*******</div>
                                    </div>
                                    <div class="email mg-1">
                                           <h2>Email</h2>
@@ -235,7 +236,14 @@ components.profileUser = `
                                    </div>
                                    <div class="language mg-1">
                                           <h2>Ngôn ngữ</h2>
-                                          <div>Tiếng việt</div>
+                                          <div class="col-select">
+                                          <select name="language" id="" class="cursor-all">
+                                                 <option value="">Choose Language</option>
+                                                 <option value="1">Tiếng Việt</option>
+                                                 <option value="21">English</option>
+                                                 
+                                          </select>
+                                   </div>
                                    </div>
                             </div>
                      </div>

@@ -64,7 +64,8 @@ button {
        transition: 0.3s;
 }
 .btn-main:hover {
-       background-color: rgb(179, 206, 223);
+       background-color: rgb(52, 145, 122);
+       color: white;
 }
 .mg-bottom {
        margin-bottom: 1rem;

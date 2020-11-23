@@ -92,13 +92,14 @@
        background-color: #ffffff;
        color: black;
        padding: 1rem;
-       border-radius: 10rem;
+       border-radius: 0.5rem;
        font-weight: 600;
-       font-size: 1rem;
+       font-size: 1.1rem;
        border: none;
+       width: 5rem;
 }
 .footer button:hover {
-       transition: 0.3s;
+       transition: 0.5s;
        background-color: rgb(245, 203, 126);
        color: black;
 }
@@ -109,12 +110,13 @@ input#file-input + label {
        background-color: #ffffff;
        font-size: large;
        padding: 1rem;
-       border-radius: 1rem;
+       border-radius: 0.5rem;
        font-weight: bold;
        color: black;
        
 }
 input#file-input + label:hover {
+       transition: 0.5s;
        color: black;
        background-color: rgb(235, 191, 109);
 }

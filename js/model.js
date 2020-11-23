@@ -1,4 +1,5 @@
 const model = {}
+model.currentUser = {}
 model.currentPost = {}
 model.posts = []
 
@@ -6,8 +7,9 @@ model.login = async ({email,password}) => {
        try {  
               const response =  await firebase.auth().signInWithEmailAndPassword(email, password)
               const user = response.user
+              console.log(user)
               if(user.emailVerified) {
-                     view.setActiveScreen('welcomeScreen')     
+                      
               }
               else{
                      alert('Please verify your email')
@@ -33,7 +35,7 @@ model.register = async ({firstname, lastname, email, password}) => {
 
                     const user = firebase.auth().currentUser;
                     user.updateProfile({
-                           displayName: firstname + lastname,
+                           displayName: firstname + ' ' + lastname,
                     }).then(()=> {
                      // Update successful.
                    }).catch(function(error) {
@@ -65,9 +67,7 @@ model.createPost = async (data) => {
 model.getPosts = async () => {
  const response =  await firebase.firestore().collection('Reviews').get()
  model.posts = getDataFromDocs(response.docs)
- console.log(model.posts)
  if(model.posts.length > 0) {
-        model.posts.reverse()
         model.posts.map(post => {
               view.showAllPost(post)
         })
