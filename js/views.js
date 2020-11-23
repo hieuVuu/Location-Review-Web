@@ -47,8 +47,7 @@ view.setActiveScreen = (screenName) => {
               document.getElementById('app').innerHTML = components.welcomeSceen
               document.getElementById('sign-out').addEventListener('click', (e)=> {
                      e.preventDefault()
-                     firebase.auth().signOut().then(function() {
-                            view.setActiveScreen('loginScreen')
+                     firebase.auth().signOut().then(function() {      
                           }).catch(function(error) {
                             alert(error.message)
                           });
@@ -68,10 +67,10 @@ view.setActiveScreen = (screenName) => {
 
               case 'createScreen' :
               document.getElementById('app').innerHTML = components.createScreen
-              let user = firebase.auth().currentUser
-              console.log(user)
-              document.getElementById('user-name').innerText = user.displayName 
               const reviewForm = document.getElementById('create-post')
+              
+              document.querySelector('#user-name').innerText = model.currentUser.displayName
+
               reviewForm.addEventListener('submit', (e)=> {
                      e.preventDefault()
                      const files = reviewForm.file.files
@@ -88,7 +87,7 @@ view.setActiveScreen = (screenName) => {
                      console.log(media)
                      const dataReview = {
                             title: reviewForm.title.value,
-                            author: user.displayName,
+                            author: model.currentUser.displayName,
                             dicstrict: reviewForm.dicstrict.value,
                             city: reviewForm.city.value,
                             address: reviewForm.detailAddress.value,
@@ -108,10 +107,8 @@ view.setActiveScreen = (screenName) => {
                             e.preventDefault()
                             view.setActiveScreen('welcomeScreen')
                      })
-                    let account = firebase.auth().currentUser
-                    console.log(account)
-                    document.querySelector('#app > div > div.user-main > div.aside-left > div.user > div.user-name').innerText = account.displayName
-                    document.querySelector('#app > div > div.user-main > div.aside-right > div.infor-authen.mg-1 > div.email.mg-1 > div').innerText = account.email
+                     document.querySelector('#app > div > div.user-main > div.aside-left > div.user > div.user-name').innerText = model.currentUser.displayName
+                     document.querySelector('#app > div > div.user-main > div.aside-right > div.infor-authen.mg-1 > div.email.mg-1 > div').innerText = model.currentUser.email;
               break;
               
        }    

@@ -11,19 +11,28 @@ const init = () => {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.auth().onAuthStateChanged(function(user) {
-
-    var user = firebase.auth().currentUser;
-    if (user) {
-      view.setActiveScreen('profileUser')
-    } else {
+  firebase.auth().onAuthStateChanged((res) =>  {
+    // console.log(res)
+    if(res) {
+      if(res.emailVerified) {
+        model.currentUser = {
+          email: res.email,
+          displayName: res.displayName,
+      } 
+        view.setActiveScreen('createScreen')
+      }
+      else {
+        alert('Please verify your email!')
+        view.setActiveScreen('loginScreen')
+      }
+    }
+    else {
       view.setActiveScreen('loginScreen')
     }
   });
   
 }
 window.onload = init
-
 getDataFromDocs = (docs) => {
   let arr = [];
   docs.map(oneDoc => {

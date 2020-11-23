@@ -2,12 +2,11 @@ const model = {}
 model.currentUser = {}
 model.currentPost = {}
 model.posts = []
-
 model.login = async ({email,password}) => {
        try {  
               const response =  await firebase.auth().signInWithEmailAndPassword(email, password)
               const user = response.user
-              console.log(user)
+
               if(user.emailVerified) {
                       
               }
@@ -73,6 +72,3 @@ model.getPosts = async () => {
         })
  }
 }
-// firebaseQueries =    async () => {
-
-// }

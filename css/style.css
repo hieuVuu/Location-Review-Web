@@ -4,27 +4,17 @@
        box-sizing: border-box;
        font-family: 'Roboto', sans-serif;
 }
-.btn  {
-       background-color: #F9A826;
-       width: 4rem;
-       height: 2.25rem;
-       border-radius: 5px;
-       border: 1px solid #F9A826;
-       font-weight: bold;
-       padding: 0.5rem;
-       transition: 0.2s;
-}
 .btn-auth {
-       width: 5rem;
-       height: 2.25rem;
+       font-size: 1.2rem;
+       width: 6rem;
+       height: 2.75rem;
        border-radius: 5px;
-       background-color: #ff637c;
-       border: 1px solid #ff637c;
+       background-color:  rgb(73, 199, 168);
+       border: 1px solid  rgb(52, 145, 122);
        font-weight: bold;
        padding: 0.5rem;
        transition: 0.2s;
 }
-
 .btn:hover  {
        background-color: #f2f2f2;
 }
@@ -34,7 +24,7 @@
 .input-wrapper input {
        font-size: 1rem;
        border-radius: 5px;
-       border: 1px solid #ff637c;
+       border: 1px solid rgb(52, 145, 122);
        width: 100%;
        padding: 12px 10px;
        outline: none;
@@ -54,17 +44,18 @@ button {
        outline: none;
 }
 .btn-main {
+       background-color: #E0EAFC;
        border-radius: 5px;
-       border: 1px solid #ffff;
+       border: 1px solid #FAFFD1;
        width: max-content;
        height: 3rem;
-       padding: 0.4rem;
+       padding: 0.5rem 1rem;
        margin: 1rem;
        font-size: 1.2rem;
        transition: 0.3s;
 }
 .btn-main:hover {
-       background-color: rgb(52, 145, 122);
+       background-color:  rgb(52, 145, 122);
        color: white;
 }
 .mg-bottom {

@@ -1,10 +1,11 @@
 .container-user {
        width: 100vw;
        height: 100vh;
+       background-color: #E0EAFC;
 }
 .container-user .header {
        height: 5rem;
-       background-color: rgb(52, 145, 122);
+       background-color: white;
        display: flex;
        justify-content: space-between;
        padding: 1rem 6rem;
@@ -43,6 +44,9 @@ body > div > div.header > div.btn-back > button > i {
 .container-user .user-main .aside-right {
        width: 65%;
 }
+.container-user .user-main .aside-right i {
+       font-size: 2rem;
+}
 .container-user .user-main .aside-right .user-account {
        margin:3rem 2rem;
        display: flex;
@@ -65,16 +69,30 @@ body > div > div.header > div.btn-back > button > i {
        margin: 4rem 3rem;
 }
 .container-user .user-main .aside-left .setting button {
-       border: 1px solid rgb(52, 145, 122);
+       border: 1px solid #09a893;
        padding: 1rem;
        margin-top: 1.2rem;
        background-color: unset;
        width: 12rem;
        border-radius: 0.3rem;
-       color: rgb(52, 145, 122);
+       color: #09a893;
        font-size: 1.2rem;
        font-weight: 700;
 }
 input#user-img {
        display: none;
+}
+#app > div > div.user-main > div.aside-right > div.infor-user.mg-1 > div.language.mg-1 > div > select {
+       font-size: large;
+       margin-top: 0.75rem;
+       outline: none;
+       border-radius: 0.25rem;
+       background-color: #09a893;
+       color: white;
+       height: 2.4rem;
+       padding: 0.5rem;
+}
+#app > div > div.user-main > div.aside-left > div.user > div.user-name {
+       font-size: 1.2rem;
+       font-weight: 600;
 }

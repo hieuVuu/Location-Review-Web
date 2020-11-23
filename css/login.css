@@ -22,18 +22,19 @@
        padding-bottom: 2rem;
 }
 #reset-p:hover {
-       color: #ff637c;
+       color: #09a893;
        cursor: pointer;
 }
 #login-form {
        margin-right: 6rem;
 }
 #redirect-register {
+       font-size: 1.1rem;
        cursor: pointer;
        font-weight: bold;
 }
 #redirect-register:hover {
-       color: #ff637c;
+       color: #09a893;
 }
 .login-container .login-form-wrapper .reset-p {
        margin-bottom: 1rem;

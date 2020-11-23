@@ -28,10 +28,10 @@
 #redirect-login {
        cursor: pointer;
        font-weight: bold;
-       font-size: 1rem;
+       font-size: 1.1rem;
 }
 #redirect-login:hover{
-       color: #ff637c;
+       color: #09a893;
 }
 .register-container .name-wrapper {
        display: flex;

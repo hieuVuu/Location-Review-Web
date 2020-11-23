@@ -7,11 +7,16 @@
        background-position: center;         
 }
 .container .header-container {
+       background-color: white;
        display: flex;
-       height: 6rem;
+       height: 4rem;
        justify-content: center;
        align-items: center;
        position: relative;
+}
+#app > div > div.header-container > div.title > i {
+       font-size: 2.25rem;
+       margin-right: 1rem ;
 }
 .container .header-container .sidenav {
        height: 100%;
@@ -55,24 +60,21 @@
        font-size: 2rem;
 }
 .container .header-container .title {
-       font-size: 2rem;
-       font-weight: 700;
+       font-size: 1.5rem;
+       font-weight: 800;
 }
 .container .main-page {
        display: flex;
+       margin-top: 3rem;
 }
 .container .aside-left {
        width: 30%;
 }
-.container .aside-left .left-title {
-       font-size: 1.4rem;
-       padding: 2rem;
-}
 .container .aside-right {     
        margin-left: 2rem;
        width: 60%;
-       background-color: white;
-       height: 37rem;
+       background-color: #E0EAFC;
+       height: 35rem;
        border-radius: 1rem;
 }
 .container .aside-right .header-right {
@@ -87,14 +89,16 @@
        right: 2rem;
 }
 .container .aside-right .header-right .col-select select {
+       background-color: #E0EAFC;
        font-size: 1rem;
-       font-weight: 600;
+       padding: 0.3rem;
+       border-radius: 0.3rem;     
 }
 .container .aside-right .list-item {
        overflow-y: auto;
        margin: 2rem 2rem 1rem ;
        width: 95%;
-       height: 80%;
+       height: 82%;
 }
 select {
        outline: none;
@@ -102,12 +106,13 @@ select {
 .container .aside-right .header-right button {
        margin: 1rem 3rem;
        border: none;
-       background-color: white;
+       background-color: #E0EAFC;
        font-size: 1.2rem;
        font-weight: 600;
 }
 .container .aside-right .header-right button:hover {
-       color: rgb(52, 145, 122);
+       color:  rgb(52, 145, 122);
+       font-weight: 800;
 }
 .container .aside-right .item {
        position: relative;

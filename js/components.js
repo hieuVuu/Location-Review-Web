@@ -2,7 +2,9 @@ const components = {}
 components.welcomeSceen = `
 <div class="container">
               <div class="header-container">
-                     <div class="title">Unique Location</div>
+                     <div class="title">
+                     <i class="fas fa-map-marker-alt"></i>
+                     Unique Location</div>
                      <div class="btn-nav">   
                      <i onclick="view.openNav()" class="fas fa-bars cursor-all"></i>  
                           <div id="mySidenav" class="sidenav">
@@ -17,7 +19,6 @@ components.welcomeSceen = `
               <div class="main-page">
 
                      <div class="aside-left">
-                            <div class="left-title">To show how you feel the world</div>
                             <div class="filter">
                                    <button class="btn-main cursor-all">Coffe</button>
                                    <button class="btn-main cursor-all"">Entertainment</button>
@@ -34,7 +35,7 @@ components.welcomeSceen = `
                                           <button class="cursor-all">Cheap for student</button>
                                    </div>
                                    <div class="col-select">
-                                          <select name="Dicstrict" id="" class="cursor-all">
+                                          <select name="Dicstrict" id="dicstrict" class="cursor-all">
                                                  <option value="">Choose Dicstrict</option>
                                                  <option value="1">Ba Đình</option>
                                                  <option value="21">Cầu Giấy</option>
@@ -53,11 +54,11 @@ components.welcomeSceen = `
 components.registerScreen = `
 <div class="register-container">
               <div class="bg-img">
-                     <img src="./images/undraw_review_fkgn.svg">
+                     <img src="./images/undraw_feedback_h2ft.svg">
               </div>
               <div class="form-wrapper">
                      <div class="register-header">
-                            <img src="./images/undraw_female_avatar_w3jk.svg" alt="">
+                            <img src="./images/undraw_male_avatar_323b.svg" alt="">
                      </div>
                      <form id="register-form">
                             <div class="name-wrapper">
@@ -90,12 +91,12 @@ components.registerScreen = `
                             </div>
                      </form>
               </div>
-       </div>`
-
+</div>
+`
 components.loginScreen = `
 <div class="login-container">
               <div class="bg-img">
-                     <img src="./images/undraw_location_review_dmxd.svg" alt="">
+                     <img src="./images/undraw_winter_road_mcqj.svg" alt="">
               </div>
               <div class="login-form-wrapper">
                      <div class="login-header">
@@ -147,9 +148,10 @@ components.createScreen = `
                                    <textarea id="style-scroll" name="description" cols="30" rows="10" placeholder="Describe your location "></textarea>
                                    <div id="des-err" class="err"></div>   
                             </div>
-                            <div class="up-load ">
+                            <div class="up-load "> 
                                    <input  type="file" id="file-input" class="cursor-all" name="file" multiple>
                                    <label for="file-input" class="btn-2 cursor-all">upload</label>
+                                   <i class="fas fa-angle-double-up"></i>    
                             </div>
                      </div>
                      <div class="local">
@@ -201,7 +203,7 @@ components.profileUser = `
                                           <input type="file" name="" id="user-img">
                                           <input type="submit">
                                    </div>
-                                   <div class="user-name">Hieuvu</div>
+                                   <div class="user-name"></div>
                             </div>
                             <div class="setting">
                                    <div class="account">
@@ -238,7 +240,7 @@ components.profileUser = `
                                           <h2>Ngôn ngữ</h2>
                                           <div class="col-select">
                                           <select name="language" id="" class="cursor-all">
-                                                 <option value="">Choose Language</option>
+                                                 <option value="">Language</option>
                                                  <option value="1">Tiếng Việt</option>
                                                  <option value="21">English</option>
                                                  

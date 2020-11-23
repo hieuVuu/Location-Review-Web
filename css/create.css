@@ -7,6 +7,7 @@
        background-position: center;         
 }
 .container-create .header {
+       background-color: white;
        display: flex;
        height: 4rem;
        justify-content: center;
@@ -17,8 +18,9 @@
        position: relative;
 }
 .container-create .post-wrapper{
-       background-color: rgb(52, 145, 122);
-       height: 37rem;
+       margin-top: 2rem;
+       background-color: #E0EAFC;
+       height: 36.5rem;
        width: 44rem;
        border-radius: 1rem;
        padding: 2rem;
@@ -26,8 +28,9 @@
        left: 26%;
 }
 .container-create .post-wrapper #create-post{
+       margin-top: 0.5rem;
        left: 5rem;
-       height: 34rem;
+       height: 32rem;
        position: absolute;
        width: 35rem;
 }
@@ -36,7 +39,7 @@
       font-weight: 700;
 }
 .container-create .post-wrapper .post-header {
-       color: wheat;
+       color: rgb(7, 7, 6);
        display: flex;
        justify-content: space-between;
        font-size: large;
@@ -76,6 +79,10 @@
        top: 2rem;
        right: 0;
 }
+#create-post > div.process > div.up-load > i {
+       font-size: 1.5rem;
+       width: 3rem;
+}
 #create-post .local {
        display: flex;
        justify-content: space-between;
@@ -97,11 +104,13 @@
        font-size: 1.1rem;
        border: none;
        width: 5rem;
+       border: 2px solid rgb(52, 145, 122);
 }
 .footer button:hover {
-       transition: 0.5s;
-       background-color: rgb(245, 203, 126);
-       color: black;
+       transition: 0.2s;
+       background-color:  rgb(52, 145, 122);
+       color: white;
+       border: 3px solid white;
 }
 input#file-input {
        display: none;
@@ -110,15 +119,17 @@ input#file-input + label {
        background-color: #ffffff;
        font-size: large;
        padding: 1rem;
-       border-radius: 0.5rem;
+       border-radius: 0.3rem;
        font-weight: bold;
        color: black;
+       border: 2px solid rgb(52, 145, 122);
        
 }
 input#file-input + label:hover {
-       transition: 0.5s;
-       color: black;
-       background-color: rgb(235, 191, 109);
+       transition: 0.2s;
+       color: white;
+       background-color:  rgb(52, 145, 122);
+       border: 3px solid white;
 }
 
 
