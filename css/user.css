@@ -89,8 +89,9 @@ input#user-img {
        border-radius: 0.25rem;
        background-color: #09a893;
        color: white;
-       height: 2.4rem;
+       height: 3rem;
        padding: 0.5rem;
+       width: 8rem;
 }
 #app > div > div.user-main > div.aside-left > div.user > div.user-name {
        font-size: 1.2rem;

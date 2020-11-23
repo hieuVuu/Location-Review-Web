@@ -19,7 +19,7 @@ const init = () => {
           email: res.email,
           displayName: res.displayName,
       } 
-        view.setActiveScreen('createScreen')
+        view.setActiveScreen('welcomeScreen')
       }
       else {
         alert('Please verify your email!')
