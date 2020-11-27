@@ -87,7 +87,7 @@ input#user-img {
        margin-top: 0.75rem;
        outline: none;
        border-radius: 0.25rem;
-       background-color: #09a893;
+       background-color: rgb(52, 145, 122);
        color: white;
        height: 3rem;
        padding: 0.5rem;

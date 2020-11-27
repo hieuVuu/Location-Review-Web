@@ -117,7 +117,7 @@ select {
 .container .aside-right .item {
        position: relative;
        display: flex;
-       height: 7rem;
+       height: 8rem;
        margin: 1rem;
 }
 .container .aside-right .item .short-description {
@@ -133,7 +133,7 @@ select {
 }
 .container .aside-right .item img{
        max-width: 12rem;
-       height: 7rem;
+       height: 7.6rem;
        width: auto;
        border-radius: 0.25rem;
 }

@@ -1,4 +1,5 @@
 const view = {}
+
 view.setActiveScreen = (screenName) => {
        switch(screenName) {
               case 'loginScreen' :
@@ -110,6 +111,15 @@ view.setActiveScreen = (screenName) => {
                      document.querySelector('#app > div > div.user-main > div.aside-left > div.user > div.user-name').innerText = model.currentUser.displayName
                      document.querySelector('#app > div > div.user-main > div.aside-right > div.infor-authen.mg-1 > div.email.mg-1 > div').innerText = model.currentUser.email;
               break;
+              case 'detailScreen':
+                     document.getElementById('app').innerHTML = components.detailScreen
+                     document.getElementById('backHomePage').addEventListener('click', (e)=> {
+                            e.preventDefault()
+                            view.setActiveScreen('welcomeScreen')
+                     })
+                     
+
+              break;
               
        }    
 }
@@ -125,8 +135,10 @@ view.closeNav = () => {
 }
 
 view.showAllPost = (post) => {
+
        const itemWrapper = document.createElement('div')
        itemWrapper.classList.add('item')
+       itemWrapper.setAttribute('onclick', 'gotoDetail()')
        itemWrapper.innerHTML = `
               <div class="item-img">
                      <img class="cursor-all" src="${post.media[0]}" alt="">
@@ -137,6 +149,10 @@ view.showAllPost = (post) => {
                      <div class="author cursor-all">By: ${post.author}</div>
               </div> `
        document.querySelector('.list-item').appendChild(itemWrapper)
+       
+}
+function gotoDetail() {
+       view.setActiveScreen('detailScreen')
 }
 
 

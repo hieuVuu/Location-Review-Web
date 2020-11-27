@@ -252,3 +252,82 @@ components.profileUser = `
               </div>
        </div>
 `
+components.detailScreen = `
+<div class="container-user">
+<div class="header">
+  <div>
+    <button id="backHomePage">back</button>
+  </div>
+</div>
+<div class="detail-main">
+  <div class="food-aside-left">
+    <form action="" id="food-form" class="margin2">
+
+      <div class="food-img">
+          <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?cs=srgb&dl=pexels-burst-374870.jpg&fm=jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?cs=srgb&dl=pexels-burst-374870.jpg&fm=jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?cs=srgb&dl=pexels-burst-374870.jpg&fm=jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              </div>
+              <br>
+
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+      </div>
+
+      <div class="map">
+        bando
+      </div>
+
+
+    </form>
+  </div>
+  <div class="food-aside-right">
+    <div class="food-infor margin2">
+      <div class="title-food mg-bottom">
+        ga luoc sieu ngon
+      </div>
+      <div class="food-description mg-bottom ">
+        description
+      </div>
+      <div class="food-address mg-bottom">
+        ba dinh - ha noi
+      </div>
+      <div class="author mg-bottom">
+        author : vu hieu
+      </div>
+      <div class="comment mg-bottom">
+        <p class="mg-bottom">Comment</p>
+        <textarea id="style-scroll" placeholder="comment " name="food-description" id="" cols="30" rows="10"></textarea>
+        <button>post</button>
+      </div>
+      <div class="showListComment">
+        <a href="">show more comments</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+`
